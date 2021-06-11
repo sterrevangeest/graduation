@@ -24,7 +24,7 @@ for diet in diets:
 
         for link in soup.find_all('a'):
             link = link.get('href')
-            if link .startswith("/allerhande/recept/"):
+            if link.startswith("/allerhande/recept/"):
 
                 recipes.append({"link": link, "category": diet})
 
